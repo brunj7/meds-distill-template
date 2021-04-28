@@ -1,0 +1,48 @@
+---
+title: "Scientific Coding as a Team"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Why
+
+## How
+
+### Asynchronous
+
+#### Code ~~review~~ feedback
+
+### Synchronous
+
+#### Pair programming
+Get a better sense of what coding standard the programmer should use
+
+## A few more thoughts
+
+### More is not always better
+- Adding People when late can be counterproductive (Brooks’ law)
+- Overtime is not the solution
+
+### Project management
+
+Agile: put it out there fast and iterate 
+
+### Tools
+
+- Version control system: say goodbye to “save as”
+- Code repository: where we share code and communicate ideas and feedback
+- Unit testing: checks that the code is still doing what it is supposed to do
+
+
+
+## Further reading
+
+- A new grad's guide to coding as a team - Atlassian:
+https://www.atlassian.com/blog/wp-content/uploads/HelloWorldEbook.pdf 
+- 10 tips for efficient programming: 
+https://www.devx.com/enterprise/top-10-tips-for-efficient-team-coding.html 
+- Agile Manifesto: 
+https://moodle2019-20.ua.es/moodle/pluginfile.php/2213/mod_resource/content/2/agile-manifesto.pdf 
