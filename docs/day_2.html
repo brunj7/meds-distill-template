@@ -2523,7 +2523,7 @@ Topics
 <li><a href="#project-management">Project management</a></li>
 </ul></li>
 <li><a href="#tools">Tools</a></li>
-<li><a href="#version-control-with-git-and-github">Version Control with git and GitHub</a>
+<li><a href="#version-control-with-git-and-github">Version Control with <code>git</code> and <code>GitHub</code></a>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
 <li><a href="#the-problem-with-save_as">The problem with <code>save_as</code></a></li>
@@ -2535,7 +2535,7 @@ Topics
 <ul>
 <li><a href="#lets-look-at-a-repository-on-github">Let’s look at a repository on GitHub</a></li>
 </ul></li>
-<li><a href="#hands-on">Hands-on</a>
+<li><a href="#github-hands-on">GitHub Hands-on</a>
 <ul>
 <li><a href="#our-asks">Our asks</a></li>
 <li><a href="#prompt">Prompt</a></li>
@@ -2546,7 +2546,7 @@ Topics
 </nav>
 </div>
 <h2 id="why">Why</h2>
-<p>Environmental Data Science (EDS), as many other data-driven research fields, requires a transdisciplinary approach to tackle challenges that often span across many domains of expertise. A team approach, gathering know-how from diverse collaborators, is therefore the most efficient way to tackle complex problems in EDS. Consequently collaborative skills are required to work effectively as a member of a team. No matter their focus, highly effective teams share certain characteristics:</p>
+<p>Environmental Data Science (EDS), as many other data-driven research fields, requires a transdisciplinary approach to tackle challenges that often span across several domains of expertise. Working as a team will leverage know-how from diverse collaborators and be the most efficient way to tackle complex problems in EDS. Consequently collaborative skills are required to work effectively as a member of a team. No matter their focus, highly effective teams share certain characteristics:</p>
 <ul>
 <li>Right size</li>
 <li>Diverse group of people with the right mix of skills, knowledge, and competencies</li>
@@ -2555,14 +2555,14 @@ Topics
 <li>Strong individual contributions</li>
 <li>Supportive team processes and culture</li>
 </ul>
-<p>Programming as part of a team is different than writing a script for your(present)self. However learning programming as part of a team is not only critical to the efficacy of your team, it will also you help you to grow as a programmer by:</p>
+<p><strong>Since Analytical Workflows are rarely linear!</strong> and are developed iteratively, the most efficient way to iterate quickly on your analysis is to use scripts and leave copy-pasting behind. <em>Programming as part of a team is different than writing a script for your(present)self</em>. However learning programming as part of a team is not only critical to the efficacy of your team, it will also you help you to grow as a programmer by:</p>
 <ul>
 <li>Motivating you to document well your work</li>
-<li>Helping you to think how to make your work reusable (by you and others)</li>
+<li>Helping you to think how to make your work reusable (by you, your future you and others)</li>
 <li>Learning to read others’ code to build on others’ work</li>
 <li>Gain further knowledge in software development tools, such as version control</li>
 </ul>
-<p>Developing those skills will accelerate your research and open the door for you to contribute to open source projects.</p>
+<p><strong>Developing those skills will accelerate your research and open the door for you to contribute to open source projects.</strong></p>
 <h2 id="how">How</h2>
 <p>It is important to acknowledge that there are many solutions to the complex research questions you will be facing in EDS. Each of those solutions will have several possible implementations, meaning that more likely you might code this implementation differently than your collaborators. Integrated software engineer teams generally try to mitigate this by developing coding standards and conventions that will guide how to write code and develop specific implementation. In scientific teams in which the collaboration is more loose and maybe more ephemeral as well, developing detailed coding standards will be too much of an overhead. However, we think it is important to acknowledge that coding style may varies among the data scientists of a project and it is a good discussion to have among the team at the beginning of the project. For example, in R it could be trying to use the tidyverse approach as much as possible. We also think there are two activities that will make the team more efficient: Code Review and Pair Programming.</p>
 <h3 id="code-review-feedback">Code <del>review</del> feedback</h3>
@@ -2601,9 +2601,10 @@ Topics
 <li>Code repository: where we share code and communicate ideas and feedback</li>
 </ul>
 <hr />
-<h1 id="version-control-with-git-and-github">Version Control with git and GitHub</h1>
+<h1 id="version-control-with-git-and-github">Version Control with <code>git</code> and <code>GitHub</code></h1>
+<p><strong>Aka – goodbye <code>script_JB_03v5b.R</code> !!</strong></p>
 <h2 id="learning-objectives">Learning Objectives</h2>
-<p>In this lesson, you will learn:</p>
+<p>In this part of the lesson, you will learn:</p>
 <ul>
 <li>Why <strong>git</strong> is useful for reproducible analysis</li>
 <li>How to use <strong>git</strong> to track changes to your work over time</li>
@@ -2655,8 +2656,9 @@ Topics
 <p><img src="img/ss3sim-commits_colored.png" /></p>
 <p>And finally, if we drill into the changes made on June 13, we can see exactly what was changed in each file:</p>
 <p><img src="img/ss3sim-diff.png" /> Tracking these changes, and seeing how they relate to released versions of software and files is exactly what Git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.</p>
-<h2 id="hands-on">Hands-on</h2>
+<h2 id="github-hands-on">GitHub Hands-on</h2>
 <p>In this section we will be using the GitHub.com website and show you do not need to be a programmer to use version control and edit files on GitHub!</p>
+<p>Checks: If you have not already created a GitHub username, please do so now: - GitHub: <a href="https://github.com" class="uri">https://github.com</a> - Follow optional <a href="https://happygitwithr.com/github-acct.html">advice on choosing your username</a></p>
 <h3 id="our-asks">Our asks</h3>
 <p>As a Team of two: - Help each other, everyone is bringing different skills! Talk it out! - Listen to each other; avoid judgment and solutioneering. - Have fun!</p>
 <h3 id="prompt">Prompt</h3>
@@ -2672,22 +2674,25 @@ Topics
 </ul>
 <p><img src="img/github-readme-edit.png" /></p>
 <ul>
-<li>Replace the title with something better!</li>
-<li>Add your name and your favorite dessert below the title: e.g. <code>-  Julien: crepes</code></li>
+<li>Replace the title (first line) with something better!</li>
+<li>Add your name and your favorite dessert below the title: e.g. <code>- Julien: crepes</code></li>
 <li>Add a descriptive message</li>
 </ul>
 <p><img src="img/github-commit.png" /> - Commit your changes</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="img/github-commit-button.png" width="30%" /></p>
+<p><img src="img/github-commit-button.png" width="50%" /></p>
 </div>
 <h4 id="person-1-add-a-file">Person 1: add a file</h4>
 <p>Download this <a href="https://aurora.nceas.ucsb.edu/~brun/favorite_desserts.csv">csv file</a> about your favorite desserts to your computer</p>
 <ul>
 <li>Just drag and drop it on the Github web page of your repository to upload it</li>
-<li>Add a short message about the file e.g. <code>Adding dessert csv</code></li>
-<li>Click on the filename to see it!</li>
+<li>Add a short message about the file e.g. <code>Adding dessert csv</code> &amp; hit <code>Commit changes</code></li>
+<li>Your have has been uploaded. Click on the filename to see it!</li>
 </ul>
-<p>Bonus Person 2: Try to edit the csv file directly on GitHub!</p>
+<p>You should have something similar to this repo: <a href="https://github.com/brunj7/favorite-desserts" class="uri">https://github.com/brunj7/favorite-desserts</a></p>
+<h4 id="bonus-person-2">Bonus Person 2:</h4>
+<p>Try to edit the csv file directly on GitHub!</p>
+<p><strong>No need to be a programmer to contribute to analytical workflows</strong></p>
 <h2 id="further-reading">Further reading</h2>
 <p>Collaborative coding:</p>
 <ul>

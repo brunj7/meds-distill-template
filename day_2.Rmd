@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Why
 
-Environmental Data Science (EDS), as many other data-driven research fields, requires a transdisciplinary approach to tackle challenges that often span across many domains of expertise.  A team approach, gathering know-how from diverse collaborators, is therefore the most efficient way to tackle complex problems in EDS. Consequently collaborative skills are required to work effectively as a member of a team. No matter their focus, highly effective teams share certain characteristics:
+Environmental Data Science (EDS), as many other data-driven research fields, requires a transdisciplinary approach to tackle challenges that often span across several domains of expertise.  Working as a team will leverage know-how from diverse collaborators and be the most efficient way to tackle complex problems in EDS. Consequently collaborative skills are required to work effectively as a member of a team. No matter their focus, highly effective teams share certain characteristics:
 
 *   Right size
 *   Diverse group of people with the right mix of skills, knowledge, and competencies
@@ -18,14 +18,14 @@ Environmental Data Science (EDS), as many other data-driven research fields, req
 *   Strong individual contributions
 *   Supportive team processes and culture
 
-Programming as part of a team is different than writing a script for your(present)self. However learning programming as part of a team is not only critical to the efficacy of your team, it will also you help you to grow as a programmer by:
+**Since Analytical Workflows are rarely linear!** and are developed iteratively, the most efficient way to iterate quickly on your analysis is to use scripts and leave copy-pasting behind.  _Programming as part of a team is different than writing a script for your(present)self_. However learning programming as part of a team is not only critical to the efficacy of your team, it will also you help you to grow as a programmer by:
 
 *   Motivating you to document well your work
-*   Helping you to think how to make your work reusable (by you and others)
+*   Helping you to think how to make your work reusable (by you, your future you and others)
 *   Learning to read others' code to build on others' work
 *   Gain further knowledge in software development tools, such as version control
 
-Developing those skills will accelerate your research and open the door for you to contribute to open source projects.
+**Developing those skills will accelerate your research and open the door for you to contribute to open source projects.**
 
 
 ## How
@@ -82,11 +82,13 @@ The good news is there are several tools out there that have been designed to ma
 
 ---
 
-# Version Control with git and GitHub
+# Version Control with `git` and `GitHub`
+
+**Aka -- goodbye `script_JB_03v5b.R` !!**
 
 ## Learning Objectives
 
-In this lesson, you will learn:
+In this part of the lesson, you will learn:
 
 - Why __git__ is useful for reproducible analysis
 - How to use __git__ to track changes to your work over time
@@ -175,10 +177,15 @@ be effective for tracking versions of scientific code, figures, and manuscripts
 to accomplish a reproducible workflow.
 
 
-## Hands-on 
-
+## GitHub Hands-on 
 
 In this section we will be using the GitHub.com website and show you do not need to be a programmer to use version control and edit files on GitHub!
+
+Checks:
+If you have not already created a GitHub username, please do so now:
+- GitHub: https://github.com
+- Follow optional [advice on choosing your username](https://happygitwithr.com/github-acct.html)
+
 
 ### Our asks
 
@@ -203,15 +210,14 @@ As a Team of two:
 ![](img/github-readme-edit.png)
 
 
-- Replace the title with something better!
-- Add your name and your favorite dessert below the title: e.g. `-  Julien: crepes`
+- Replace the title (first line) with something better!
+- Add your name and your favorite dessert below the title: e.g.  ` - Julien: crepes`
 - Add a descriptive message
 
 ![](img/github-commit.png)
 - Commit your changes
 
-```{r commit-button, out.width='30%', ,echo=FALSE}
-
+```{r commit-button, out.width= "50%", echo=FALSE}
 knitr::include_graphics("img/github-commit-button.png")
 ```
 
@@ -221,11 +227,17 @@ knitr::include_graphics("img/github-commit-button.png")
 Download this [csv file](https://aurora.nceas.ucsb.edu/~brun/favorite_desserts.csv) about your favorite desserts to your computer
 
 - Just drag and drop it on the Github web page of your repository to upload it
-- Add a short message about the file e.g. `Adding dessert csv`
-- Click on the filename to see it!
+- Add a short message about the file e.g. `Adding dessert csv` & hit `Commit changes`
+- Your have has been uploaded. Click on the filename to see it!
 
-Bonus Person 2:
-Try to edit the csv file directly on GitHub!
+You should have something similar to this repo: https://github.com/brunj7/favorite-desserts
+
+#### Bonus Person 2:
+
+Try to edit the csv file directly on GitHub! 
+
+**No need to be a programmer to contribute to analytical workflows**
+
 
 
 ## Further reading
