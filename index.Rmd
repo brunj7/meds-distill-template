@@ -104,7 +104,7 @@ The goal of EDS 214 (Analytical Workflows and Scientific Reproducibility) is to 
 
 | Day   | Lecture topics                  | Lab topics |
 |-------|--------------------------------|------------|
-| 1     | [Reproducible Workflows](day_1.Rmd)        | Writing pseudo code     |
+| 1     | Reproducible Workflows         | Writing pseudo code     |
 | 2     | Version Control                | git & GitHub   |
 | 3     | Code ~~Review~~ Feedback       | Forking & Pull request     |
 | 4     | Pair Programming               | Practice Driver and Navigator roles   |

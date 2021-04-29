@@ -2480,7 +2480,7 @@ Topics
 <div class="nav-dropdown-content">
 <a href="day_1.html">Day 1: Reproducible Workflows</a>
 <a href="day_2.html">Day 2: Version Control &amp; Code Repository</a>
-<a href="day_3.html">Day 3: Code ~~Review~~ Feedback</a>
+<a href="day_3.html">Day 3: Code Feedback</a>
 <a href="day_4.html">Day 4: Pair Programming</a>
 <a href="day_5.html">Day 5: Documenting things</a>
 </div>
@@ -2511,49 +2511,114 @@ Topics
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#why">Why</a></li>
-<li><a href="#how">How</a>
+<li><a href="#version-control-with-git-and-github">Version Control with git and GitHub</a>
 <ul>
-<li><a href="#asynchronous">Asynchronous</a></li>
-<li><a href="#synchronous">Synchronous</a></li>
-</ul></li>
-<li><a href="#a-few-more-thoughts">A few more thoughts</a>
+<li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#the-problem-with-save_as">The problem with <code>save_as</code></a></li>
+<li><a href="#git">git</a>
 <ul>
-<li><a href="#more-is-not-always-better">More is not always better</a></li>
-<li><a href="#project-management">Project management</a></li>
-<li><a href="#tools">Tools</a></li>
+<li><a href="#repository">Repository</a></li>
 </ul></li>
-<li><a href="#further-reading">Further reading</a></li>
+<li><a href="#github">GitHub</a>
+<ul>
+<li><a href="#lets-look-at-a-repository-on-github">Let’s look at a repository on GitHub</a></li>
+</ul></li>
+<li><a href="#hands-on">Hands-on</a>
+<ul>
+<li><a href="#our-asks">Our asks</a></li>
+<li><a href="#prompt">Prompt</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 </div>
-<h2 id="why">Why</h2>
-<h2 id="how">How</h2>
-<h3 id="asynchronous">Asynchronous</h3>
-<h4 id="code-review-feedback">Code <del>review</del> feedback</h4>
-<h3 id="synchronous">Synchronous</h3>
-<h4 id="pair-programming">Pair programming</h4>
-<p>Get a better sense of what coding standard the programmer should use</p>
-<h2 id="a-few-more-thoughts">A few more thoughts</h2>
-<h3 id="more-is-not-always-better">More is not always better</h3>
+<h1 id="version-control-with-git-and-github">Version Control with git and GitHub</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>In this lesson, you will learn:</p>
 <ul>
-<li>Adding People when late can be counterproductive (Brooks’ law)</li>
-<li>Overtime is not the solution</li>
+<li>Why <strong>git</strong> is useful for reproducible analysis</li>
+<li>How to use <strong>git</strong> to track changes to your work over time</li>
+<li>How to use <strong>GitHub</strong> to collaborate with others</li>
+<li>How to structure your commits so your changes are clear to others</li>
+<li>How to write effective commit messages</li>
 </ul>
-<h3 id="project-management">Project management</h3>
-<p>Agile: put it out there fast and iterate</p>
-<h3 id="tools">Tools</h3>
+<h2 id="the-problem-with-save_as">The problem with <code>save_as</code></h2>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/phd_comics_final.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<p>Every file in the scientific process changes. Manuscripts are edited. Figures get revised. Code gets fixed when problems are discovered. Data files get combined together, then errors are fixed, and then they are split and combined again. In the course of a single analysis, one can expect thousands of changes to files. And yet, all we use to track this are simplistic <em>filenames</em>. You might think there is a better way, and you’d be right: <strong>version control</strong>.</p>
+<p>Version control systems help you track all of the changes to your files, without the spaghetti mess that ensues from simple file renaming. In other words, version control is a system that helps you to manage the different versions of your files in an organized manner. It will help you to never have to duplicate files using <code>save as</code> as a way to keep different versions of a file (see below). Version control help you to create a timeline of snapshots containing the different versions of a file. At any point in time, you will be able to roll back to a specific version. Bonus: you can add a short description (commit message) to remember what each specific version is about.</p>
+<p><strong>What is the difference between <code>git</code> and <code>GitHub</code>?</strong></p>
 <ul>
-<li>Version control system: say goodbye to “save as”</li>
-<li>Code repository: where we share code and communicate ideas and feedback</li>
-<li>Unit testing: checks that the code is still doing what it is supposed to do</li>
-</ul>
-<h2 id="further-reading">Further reading</h2>
+<li><strong>git</strong>: is a version control software used to track files in a folder (a repository)
 <ul>
-<li>A new grad’s guide to coding as a team - Atlassian: <a href="https://www.atlassian.com/blog/wp-content/uploads/HelloWorldEbook.pdf" class="uri">https://www.atlassian.com/blog/wp-content/uploads/HelloWorldEbook.pdf</a></li>
-<li>10 tips for efficient programming: <a href="https://www.devx.com/enterprise/top-10-tips-for-efficient-team-coding.html" class="uri">https://www.devx.com/enterprise/top-10-tips-for-efficient-team-coding.html</a></li>
-<li>Agile Manifesto: <a href="https://moodle2019-20.ua.es/moodle/pluginfile.php/2213/mod_resource/content/2/agile-manifesto.pdf" class="uri">https://moodle2019-20.ua.es/moodle/pluginfile.php/2213/mod_resource/content/2/agile-manifesto.pdf</a></li>
+<li>git creates a timeline or history of your files</li>
+</ul></li>
+<li><strong>GitHub</strong>: is a code repository in the cloud that enables users to store their git repositories and share them with others. Github also add many features to manage projects and document your work.</li>
 </ul>
+<h2 id="git">git</h2>
+<p><img style="float: right;width: 100px;" src="img/git_icon.png"></p>
+<p>This training material focuses on the code versioning system called <code>Git</code>. Note that there are others, such as <code>Mercurial</code> or <code>svn</code> for example.</p>
+<p>Git is a <em>free</em> and <em>open source</em> distributed <em>version control system</em>. It has many functionalities and was originally geared towards software development and production environment. In fact, Git was initially designed and developed in 2005 by Linux kernel developers (including Linus Torvalds) to track the development of the Linux kernel. Here is a <a href="https://www.youtube.com/watch?v=4XpnKHJAok8">fun video</a> of Linus Torvalds touting Git to Google.</p>
+<p><strong>How does it work?</strong></p>
+<p>Git can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In git (and other version control systems) terms, this “tracked folder” is called a <strong>repository</strong> (which formally is a specific data structure storing versioning information).</p>
+<p><strong>What git is not:</strong></p>
+<ul>
+<li><strong>Git is not a backup per se</strong></li>
+<li>Git is not good at versioning large files (there are workarounds) =&gt; not meant for data</li>
+</ul>
+<h3 id="repository">Repository</h3>
+<p>Git can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In git (and other version control systems) terms, this “tracked folder” is called a <strong>repository</strong> (which formally is a specific data structure storing versioning information).</p>
+<p>Although there many ways to start a new repository, <a href="https://github.com/">GitHub</a> (or any other cloud solutions, such as <a href="https://about.gitlab.com/">GitLab</a>) provide among the most convenient way of starting a repository.</p>
+<p><img style="float: right;width: 100px;" src="img/github-logo.png"></p>
+<h2 id="github">GitHub</h2>
+<p><strong>GitHub is a company that hosts git repositories online</strong> and provides several collaboration features (among which <code>forking</code>). GitHub fosters a great user community and has built a nice web interface to git, also adding great visualization/rendering capacities of your data.</p>
+<ul>
+<li><strong>GitHub.com</strong>: <a href="https://github.com" class="uri">https://github.com</a></li>
+<li><strong>A user account</strong>: <a href="https://github.com/brunj7" class="uri">https://github.com/brunj7</a></li>
+<li><strong>An organization account</strong>: <a href="https://github.com/nceas" class="uri">https://github.com/nceas</a></li>
+<li><strong>NCEAS GitHub instance</strong>: <a href="https://github.nceas.ucsb.edu/" class="uri">https://github.nceas.ucsb.edu/</a></li>
+</ul>
+<h3 id="lets-look-at-a-repository-on-github">Let’s look at a repository on GitHub</h3>
+<p>This screen shows the copy of a repository stored on GitHub, with its <span style="color:red">list of files</span>, <span style="color:green">when the files and directories were last modified</span>, and <span style="color:blue">some information on who made the most recent changes.</span></p>
+<p><img src="img/ss3sim-github_colored.png" /></p>
+<p>If we drill into the “<span style="color:orange">commits</span>” for the repository, we can see the history of changes made to all of the files. Looks like <code>kellijohnson</code> and <code>seananderson</code> were fixing things in June and July:</p>
+<p><img src="img/ss3sim-commits_colored.png" /></p>
+<p>And finally, if we drill into the changes made on June 13, we can see exactly what was changed in each file:</p>
+<p><img src="img/ss3sim-diff.png" /> Tracking these changes, and seeing how they relate to released versions of software and files is exactly what Git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.</p>
+<h2 id="hands-on">Hands-on</h2>
+<p>In this section we will be using the GitHub.com website and show you do not need to be a programmer to use version control and edit files on GitHub!</p>
+<h3 id="our-asks">Our asks</h3>
+<p>As a Team of two: - Help each other, everyone is bringing different skills! Talk it out! - Listen to each other; avoid judgment and solutioneering. - Have fun!</p>
+<h3 id="prompt">Prompt</h3>
+<h4 id="person-1-owner">Person 1 (owner):</h4>
+<ul>
+<li>Create a (first) repository following <a href="https://docs.github.com/en/github/getting-started-with-github/create-a-repo">these instructions</a> steps 1-6</li>
+</ul>
+<p><img src="img/github-dessert-repo.png" /></p>
+<h4 id="person-2-modify-a-file">Person 2: Modify a file</h4>
+<ul>
+<li>Refresh the webpage</li>
+<li>Click on pen at the top of the README.md file</li>
+</ul>
+<p><img src="img/github-readme-edit.png" /></p>
+<ul>
+<li>Replace the title with something better! (don’t rename it)</li>
+<li>Add your name and your favorite dessert below the title: e.g. <code>-  Julien: crepes</code></li>
+<li>Add a descriptive message</li>
+</ul>
+<p><img src="img/github-commit.png" /> - Commit your changes</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/github-commit-button.png" width="30%" /></p>
+</div>
+<h4 id="person-1-add-a-file">Person 1: add a file</h4>
+<p>Download this <a href="https://aurora.nceas.ucsb.edu/~brun/favorite_desserts.csv">csv file</a> about your favorite desserts to your computer</p>
+<ul>
+<li>Just drag and dropit on the Github webapge of your repository to upload it</li>
+<li>Add a short message about the file e.g. <code>Adding dessert csv</code></li>
+<li>Click on the filename to see it!</li>
+</ul>
+<p>Bonus Person 2: Try to edit the csv file directly on GitHub!</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
