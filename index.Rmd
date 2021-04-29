@@ -51,7 +51,7 @@ The generation and analysis of environmental data is often a complex, multi-step
 
 **Course dates:** Monday (2021-08-02) - Friday (2021-08-06)
 
-EDS 212 is an intensive 1-week long 2-unit course. Students should plan to attend all scheduled sessions. All course requirements will be completed between 8am and 5pm PST (M - F), i.e. you are not expected to do additional work for EDS 212 outside of those hours, unless you are working with the Teaching Assistant in student hours.
+EDS 214 is an intensive 1-week long 2-unit course. Students should plan to attend all scheduled sessions. All course requirements will be completed between 8am and 5pm PST (M - F), i.e. you are not expected to do additional work for EDS 214 outside of those hours, unless you are working with the Teaching Assistant in student hours.
 
 Tentative daily schedule (subject to change):
 
@@ -105,8 +105,8 @@ The goal of EDS 214 (Analytical Workflows and Scientific Reproducibility) is to 
 | Day   | Lecture topics                  | Lab topics |
 |-------|--------------------------------|------------|
 | 1     | Reproducible Workflows         | Writing pseudo code     |
-| 2    | Coding as a Team               | git & GitHub      |
-| 3     | Collaborative Coding           | Forking & Pull request   |
-| 4     | Pair Programming               | Practice Driver and Navigator roles   |
-| 5     | Documenting things             | How to write documentation   |
+| 2     | Coding as a Team               | git & GitHub      |
+| 3     | Code Review & Pair Programming | Forking & Pull request   |
+| 4     | Documenting things             | How to write documentation   |
+| 5     | Managing your code and data    | Working on a remote server  |
 
