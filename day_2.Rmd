@@ -19,6 +19,7 @@ Environmental Data Science (EDS), as many other data-driven research fields, req
 *   Supportive team processes and culture
 
 Programming as part of a team is different than writing a script for your(present)self. However learning programming as part of a team is not only critical to the efficacy of your team, it will also you help you to grow as a programmer by:
+
 *   Motivating you to document well your work
 *   Helping you to think how to make your work reusable (by you and others)
 *   Learning to read others' code to build on others' work
@@ -65,12 +66,12 @@ Adapted from Corey Johannsen: https://blog.newrelic.com/2017/10/31/mob-programmi
 ## A few more thoughts
 
 ### More is not always better
-- Adding more analyst when late can be counterproductive ([Brooks’ law](https://en.wikipedia.org/wiki/Brooks%27s_law))
+- Adding more analysts late into a project can be counterproductive ([Brooks’ law](https://en.wikipedia.org/wiki/Brooks%27s_law))
 - Overtime is not the solution as it will increase likeliness of errors and thus frustration. Try to focus on finding at what time of the day you are the most productive at coding instead
 
 ### Project management
 
-There is a lot to borrow from Agile development approach for scientist. In a nutshell: "put it out there fast and iterate" 
+This is a big topic and will be highly influeced by the team you are working with both in terms of practices and tools used to manage the project. On the coding side, there is a lot to borrow from Agile development approach for scientist. In a nutshell: "put it out there fast and iterate". In other words to wait to try to have the percfect code or analaysis before sharing it with your collaborators. It is more efficenet to share and discuss an early / draft version, gather feedback and iterate.
 
 ## Tools
 
