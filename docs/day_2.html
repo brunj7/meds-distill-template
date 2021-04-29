@@ -86,26 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>EDS 214: Tools: Version Control and Code Repository</title>
+  <title>EDS 214: Scientific Coding as a Team</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 214: Tools: Version Control and Code Repository"/>
+  <meta property="og:title" content="EDS 214: Scientific Coding as a Team"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 214"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 214: Tools: Version Control and Code Repository"/>
+  <meta property="twitter:title" content="EDS 214: Scientific Coding as a Team"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Tools: Version Control and Code Repository"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Scientific Coding as a Team"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2459,7 +2459,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Tools: Version Control and Code Repository","authors":[]}
+{"title":"Scientific Coding as a Team","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2479,8 +2479,8 @@ Topics
 </button>
 <div class="nav-dropdown-content">
 <a href="day_1.html">Day 1: Reproducible Workflows</a>
-<a href="day_2.html">Day 2: Version Control &amp; Code Repository</a>
-<a href="day_3.html">Day 3: Code Feedback</a>
+<a href="day_2.html">Day 2: Scientific Coding as a Team</a>
+<a href="day_3.html">Day 3: Collaborative coding</a>
 <a href="day_4.html">Day 4: Pair Programming</a>
 <a href="day_5.html">Day 5: Documenting things</a>
 </div>
@@ -2499,7 +2499,7 @@ Topics
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Tools: Version Control and Code Repository</h1>
+<h1>Scientific Coding as a Team</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2511,6 +2511,18 @@ Topics
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
+<li><a href="#why">Why</a></li>
+<li><a href="#how">How</a>
+<ul>
+<li><a href="#code-review-feedback">Code <del>review</del> feedback</a></li>
+<li><a href="#pair-programming">Pair programming</a></li>
+</ul></li>
+<li><a href="#a-few-more-thoughts">A few more thoughts</a>
+<ul>
+<li><a href="#more-is-not-always-better">More is not always better</a></li>
+<li><a href="#project-management">Project management</a></li>
+</ul></li>
+<li><a href="#tools">Tools</a></li>
 <li><a href="#version-control-with-git-and-github">Version Control with git and GitHub</a>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
@@ -2528,10 +2540,61 @@ Topics
 <li><a href="#our-asks">Our asks</a></li>
 <li><a href="#prompt">Prompt</a></li>
 </ul></li>
+<li><a href="#further-reading">Further reading</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
+<h2 id="why">Why</h2>
+<p>Environmental Data Science (EDS), as many other data-driven research fields, requires a transdisciplinary approach to tackle challenges that often span across many domains of expertise. A team approach, gathering know-how from diverse collaborators, is therefore the most efficient way to tackle complex problems in EDS. Consequently collaborative skills are required to work effectively as a member of a team. No matter their focus, highly effective teams share certain characteristics:</p>
+<ul>
+<li>Right size</li>
+<li>Diverse group of people with the right mix of skills, knowledge, and competencies</li>
+<li>Aligned purpose and incentives</li>
+<li>Effective organizational structure</li>
+<li>Strong individual contributions</li>
+<li>Supportive team processes and culture</li>
+</ul>
+<p>Programming as part of a team is different than writing a script for your(present)self. However learning programming as part of a team is not only critical to the efficacy of your team, it will also you help you to grow as a programmer by: * Motivating you to document well your work * Helping you to think how to make your work reusable (by you and others) * Learning to read others’ code to build on others’ work * Gain further knowledge in software development tools, such as version control</p>
+<p>Developing those skills will accelerate your research and open the door for you to contribute to open source projects.</p>
+<h2 id="how">How</h2>
+<p>It is important to acknowledge that there are many solutions to the complex research questions you will be facing in EDS. Each of those solutions will have several possible implementations, meaning that more likely you might code this implementation differently than your collaborators. Integrated software engineer teams generally try to mitigate this by developing coding standards and conventions that will guide how to write code and develop specific implementation. In scientific teams in which the collaboration is more loose and maybe more ephemeral as well, developing detailed coding standards will be too much of an overhead. However, we think it is important to acknowledge that coding style may varies among the data scientists of a project and it is a good discussion to have among the team at the beginning of the project. For example, in R it could be trying to use the tidyverse approach as much as possible. We also think there are two activities that will make the team more efficient: Code Review and Pair Programming.</p>
+<h3 id="code-review-feedback">Code <del>review</del> feedback</h3>
+<p>Code review is an <em>asynchronous</em> team activity. Despite its impressive name, code review should be seen by the person asking for the review (submitter) as a great opportunity to have one more pair of eyes looking at your code and providing feedback to make your code better. The “reviewer” should see this activity as a great way to learn from others.</p>
+<h3 id="pair-programming">Pair programming</h3>
+<p>Code review is an <em>synchronous</em> team activity, where several programmers get to work together on the same piece of code. This is a great way to gain a better sense of what coding style people are using and better understand their way of solving challenges. It is also a great way to learn from each other. Generally, there is one Driver who is the person typing at the computer. The other role is called Navigator(s). The Navigator does not write code and focuses on finding solutions to the problem. Their use of computer should be limited to searching online for solutions.</p>
+<h4 id="basic-principles-practices">Basic principles &amp; practices</h4>
+<p>Adapted from Woody Zuill <a href="https://www.agileconnection.com/article/getting-started-mob-programming" class="uri">https://www.agileconnection.com/article/getting-started-mob-programming</a></p>
+<ul>
+<li><strong>Treat each other with kindness, consideration, and respect</strong> - makes group work more fun and sustainable</li>
+<li><strong>Driver/navigator pair programming adapted to work with the whole team</strong> - “For an idea to go from your head into the computer, it <em>must</em> go through someone else’s hands.” Speak at the highest level of abstraction that the driver (and the rest of the team) is able to digest at the moment</li>
+<li><strong>Timed Rotation</strong> - 20-60 minutes. We don’t require that everyone take the driver role; it is everyone’s choice whether to do so</li>
+<li><strong>Whole Team</strong> - every contributor to the project is an integral part of the whole team; when we don’t have the skills we need within the team, we find someone who does and invite them to work with us to accomplish the needed work</li>
+<li><strong>Reflect, Tune, and Adjust Frequently</strong> - based on agile principle: “At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.”</li>
+</ul>
+<h4 id="tips-and-tricks-for-effective-team-programming">Tips and Tricks for Effective Team Programming</h4>
+<p>Adapted from Corey Johannsen: <a href="https://blog.newrelic.com/2017/10/31/mob-programming-hurdles/" class="uri">https://blog.newrelic.com/2017/10/31/mob-programming-hurdles/</a></p>
+<ul>
+<li><strong>Suggest, don’t dictate:</strong> Instead of telling the driver what to type into their editor, we explain what we’re trying to accomplish and then help the driver find the best solution. We’ve found that drivers learn better this way, and they don’t just end up feeling like a stenographer. Whenever possible, we ask questions that lead the driver to discover the answers on their own.</li>
+<li><strong>Stay focused and be present:</strong> Shut your laptop and put your phone away. I’ve struggled with following this guideline—we all have—and I recognize that the distraction almost always affects the rest of the mob. We tell all our mob members to be present, and if you can’t, it’s OK to leave until you can be.</li>
+<li><strong>Use a timer, but be ready to pause it:</strong> We switch drivers every 20 - 60 minutes. However, we often wander off implementation into design discussions—it’s unavoidable—so this is when we pause the timer. This is another key guideline of our mob: the time you spend driving should be dedicated to writing the code that helps complete the task, not discussing design solutions.</li>
+<li><strong>Set specific tasks for each session:</strong> When our mob gathers for a session, we first agree on and create a checklist of the tasks we are going to complete, and order them by priority on a whiteboard. This ensures we are all focused on the same task and keeps us moving forward. Additionally, this keeps us aligned with Minimal Marketable Feature (MMF) work, which we can communicate with our engineering and product managers to assure them we’re completing tasks that align with developing small, self-contained features that demonstrate immediate customer value.</li>
+</ul>
+<h2 id="a-few-more-thoughts">A few more thoughts</h2>
+<h3 id="more-is-not-always-better">More is not always better</h3>
+<ul>
+<li>Adding more analyst when late can be counterproductive (<a href="https://en.wikipedia.org/wiki/Brooks%27s_law">Brooks’ law</a>)</li>
+<li>Overtime is not the solution as it will increase likeliness of errors and thus frustration. Try to focus on finding at what time of the day you are the most productive at coding instead</li>
+</ul>
+<h3 id="project-management">Project management</h3>
+<p>There is a lot to borrow from Agile development approach for scientist. In a nutshell: “put it out there fast and iterate”</p>
+<h2 id="tools">Tools</h2>
+<p>The good news is there are several tools out there that have been designed to make developing code as a team more efficient. In this course, we will focus on getting familiar with the following:</p>
+<ul>
+<li>Version control system: say goodbye to “save as”</li>
+<li>Code repository: where we share code and communicate ideas and feedback</li>
+</ul>
+<hr />
 <h1 id="version-control-with-git-and-github">Version Control with git and GitHub</h1>
 <h2 id="learning-objectives">Learning Objectives</h2>
 <p>In this lesson, you will learn:</p>
@@ -2598,12 +2661,12 @@ Topics
 <p><img src="img/github-dessert-repo.png" /></p>
 <h4 id="person-2-modify-a-file">Person 2: Modify a file</h4>
 <ul>
-<li>Refresh the webpage</li>
+<li>Refresh the web page</li>
 <li>Click on pen at the top of the README.md file</li>
 </ul>
 <p><img src="img/github-readme-edit.png" /></p>
 <ul>
-<li>Replace the title with something better! (don’t rename it)</li>
+<li>Replace the title with something better!</li>
 <li>Add your name and your favorite dessert below the title: e.g. <code>-  Julien: crepes</code></li>
 <li>Add a descriptive message</li>
 </ul>
@@ -2614,11 +2677,38 @@ Topics
 <h4 id="person-1-add-a-file">Person 1: add a file</h4>
 <p>Download this <a href="https://aurora.nceas.ucsb.edu/~brun/favorite_desserts.csv">csv file</a> about your favorite desserts to your computer</p>
 <ul>
-<li>Just drag and dropit on the Github webapge of your repository to upload it</li>
+<li>Just drag and drop it on the Github web page of your repository to upload it</li>
 <li>Add a short message about the file e.g. <code>Adding dessert csv</code></li>
 <li>Click on the filename to see it!</li>
 </ul>
 <p>Bonus Person 2: Try to edit the csv file directly on GitHub!</p>
+<h2 id="further-reading">Further reading</h2>
+<p>Collaborative coding:</p>
+<ul>
+<li>A new grad’s guide to coding as a team - Atlassian: <a href="https://www.atlassian.com/blog/wp-content/uploads/HelloWorldEbook.pdf" class="uri">https://www.atlassian.com/blog/wp-content/uploads/HelloWorldEbook.pdf</a></li>
+<li>10 tips for efficient programming: <a href="https://www.devx.com/enterprise/top-10-tips-for-efficient-team-coding.html" class="uri">https://www.devx.com/enterprise/top-10-tips-for-efficient-team-coding.html</a></li>
+<li>Agile Manifesto: <a href="https://moodle2019-20.ua.es/moodle/pluginfile.php/2213/mod_resource/content/2/agile-manifesto.pdf" class="uri">https://moodle2019-20.ua.es/moodle/pluginfile.php/2213/mod_resource/content/2/agile-manifesto.pdf</a></li>
+</ul>
+<p>Git using RStudio:</p>
+<ul>
+<li>Happy Git and GitHub for the useR: <a href="http://happygitwithr.com/" class="uri">http://happygitwithr.com/</a></li>
+<li>R packages - Git and GitHub: <a href="http://r-pkgs.had.co.nz/git.html#git-init" class="uri">http://r-pkgs.had.co.nz/git.html#git-init</a></li>
+</ul>
+<p>Git mainly from the command line:</p>
+<ul>
+<li>Interactive git 101: <a href="https://try.github.io/">https://try.github.io/</a></li>
+<li>Very good tutorial about git: <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">https://www.atlassian.com/git/tutorials/what-is-version-control</a></li>
+<li>Git tutorial geared towards scientists: <a href="http://nyuccl.org/pages/gittutorial/">http://nyuccl.org/pages/gittutorial/</a></li>
+<li>Short intro to git basics: <a href="https://github.com/mbjones/gitbasics">https://github.com/mbjones/gitbasics</a></li>
+<li>Git documentation about the basics: <a href="http://gitref.org/basic/">http://gitref.org/basic/</a></li>
+<li>Git documentation - the basics: <a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics">https://git-scm.com/book/en/v2/Getting-Started-Git-Basics</a></li>
+<li>Git terminology: <a href="https://www.atlassian.com/git/glossary/terminology">https://www.atlassian.com/git/glossary/terminology</a></li>
+<li>In trouble, guide to know what to do: <a href="http://justinhileman.info/article/git-pretty/git-pretty.png">http://justinhileman.info/article/git-pretty/git-pretty.png</a></li>
+<li>Want to undo something? <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git" class="uri">https://github.com/blog/2019-how-to-undo-almost-anything-with-git</a></li>
+<li>Git terminology: <a href="https://www.atlassian.com/git/glossary/terminology" class="uri">https://www.atlassian.com/git/glossary/terminology</a></li>
+<li>8 tips to work better with git: <a href="https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/" class="uri">https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/</a></li>
+<li>GitPro book (2nd edition): <a href="https://git-scm.com/book/en/v2" class="uri">https://git-scm.com/book/en/v2</a></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

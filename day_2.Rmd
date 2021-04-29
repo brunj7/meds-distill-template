@@ -1,10 +1,85 @@
 ---
-title: "Tools: Version Control and Code Repository"
+title: "Scientific Coding as a Team"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
+## Why
+
+Environmental Data Science (EDS), as many other data-driven research fields, requires a transdisciplinary approach to tackle challenges that often span across many domains of expertise.  A team approach, gathering know-how from diverse collaborators, is therefore the most efficient way to tackle complex problems in EDS. Consequently collaborative skills are required to work effectively as a member of a team. No matter their focus, highly effective teams share certain characteristics:
+
+*   Right size
+*   Diverse group of people with the right mix of skills, knowledge, and competencies
+*   Aligned purpose and incentives
+*   Effective organizational structure
+*   Strong individual contributions
+*   Supportive team processes and culture
+
+Programming as part of a team is different than writing a script for your(present)self. However learning programming as part of a team is not only critical to the efficacy of your team, it will also you help you to grow as a programmer by:
+*   Motivating you to document well your work
+*   Helping you to think how to make your work reusable (by you and others)
+*   Learning to read others' code to build on others' work
+*   Gain further knowledge in software development tools, such as version control
+
+Developing those skills will accelerate your research and open the door for you to contribute to open source projects.
+
+
+## How
+
+It is important to acknowledge that there are many solutions to the complex research questions you will be facing in EDS. Each of those solutions will have several possible implementations, meaning that more likely you might code this implementation differently than your collaborators. Integrated software engineer teams generally try to mitigate this by developing coding standards and conventions that will guide how to write code and develop specific implementation. In scientific teams in which the collaboration is more loose and maybe more ephemeral as well, developing detailed coding standards will be too much of an overhead. However, we think it is important to acknowledge that coding style may varies among the data scientists of a project and it is a good discussion to have among the team at the beginning of the project. For example, in R it could be trying to use the tidyverse approach as much as possible. We also think there are two activities that will make the team more efficient: Code Review and Pair Programming. 
+
+
+### Code ~~review~~ feedback
+
+Code review is an *asynchronous* team activity. Despite its impressive name, code review should be seen by the person asking for the review (submitter) as a great opportunity to have one more pair of eyes looking at your code and providing feedback to make your code better. The "reviewer" should see this activity as a great way to learn from others.
+
+
+### Pair programming
+
+Code review is an *synchronous* team activity, where several programmers get to work together on the same piece of code. This is a great way to gain a better sense of what coding style people are using and better understand their way of solving challenges. It is also a great way to learn from each other. Generally, there is one Driver who is the person typing at the computer. The other role is called Navigator(s). The Navigator does not write code and focuses on finding solutions to the problem. Their use of computer should be limited to searching online for solutions.
+
+
+#### Basic principles & practices 
+
+Adapted from Woody Zuill https://www.agileconnection.com/article/getting-started-mob-programming
+
+- **Treat each other with kindness, consideration, and respect** - makes group work more fun and sustainable
+- **Driver/navigator pair programming adapted to work with the whole team** - “For an idea to go from your head into the computer, it _must_ go through someone else’s hands.” Speak at the highest level of abstraction that the driver (and the rest of the team) is able to digest at the moment
+- **Timed Rotation** - 20-60 minutes. We don’t require that everyone take the driver role; it is everyone’s choice whether to do so
+- **Whole Team** - every contributor to the project is an integral part of the whole team; when we don’t have the skills we need within the team, we find someone who does and invite them to work with us to accomplish the needed work
+- **Reflect, Tune, and Adjust Frequently** - based on agile principle: “At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.” 
+
+#### Tips and Tricks for Effective Team Programming  
+
+Adapted from Corey Johannsen: https://blog.newrelic.com/2017/10/31/mob-programming-hurdles/
+
+- **Suggest, don’t dictate:** Instead of telling the driver what to type into their editor, we explain what we’re trying to accomplish and then help the driver find the best solution. We’ve found that drivers learn better this way, and they don’t just end up feeling like a stenographer. Whenever possible, we ask questions that lead the driver to discover the answers on their own.
+- **Stay focused and be present:** Shut your laptop and put your phone away. I’ve struggled with following this guideline—we all have—and I recognize that the distraction almost always affects the rest of the mob. We tell all our mob members to be present, and if you can’t, it’s OK to leave until you can be.
+- **Use a timer, but be ready to pause it:** We switch drivers every 20 - 60 minutes. However, we often wander off implementation into design discussions—it’s unavoidable—so this is when we pause the timer. This is another key guideline of our mob: the time you spend driving should be dedicated to writing the code that helps complete the task, not discussing design solutions.
+- **Set specific tasks for each session:** When our mob gathers for a session, we first agree on and create a checklist of the tasks we are going to complete, and order them by priority on a whiteboard. This ensures we are all focused on the same task and keeps us moving forward. Additionally, this keeps us aligned with Minimal Marketable Feature (MMF) work, which we can communicate with our engineering and product managers to assure them we’re completing tasks that align with developing small, self-contained features that demonstrate immediate customer value.
+
+
+## A few more thoughts
+
+### More is not always better
+- Adding more analyst when late can be counterproductive ([Brooks’ law](https://en.wikipedia.org/wiki/Brooks%27s_law))
+- Overtime is not the solution as it will increase likeliness of errors and thus frustration. Try to focus on finding at what time of the day you are the most productive at coding instead
+
+### Project management
+
+There is a lot to borrow from Agile development approach for scientist. In a nutshell: "put it out there fast and iterate" 
+
+## Tools
+
+The good news is there are several tools out there that have been designed to make developing code as a team more efficient. In this course, we will focus on getting familiar with the following:
+
+- Version control system: say goodbye to “save as”
+- Code repository: where we share code and communicate ideas and feedback
+
+---
 
 # Version Control with git and GitHub
 
@@ -121,13 +196,13 @@ As a Team of two:
 
 #### Person 2: Modify a file
 
-- Refresh the webpage
+- Refresh the web page
 - Click on pen at the top of the README.md file
 
 ![](img/github-readme-edit.png)
 
 
-- Replace the title with something better! (don’t rename it)
+- Replace the title with something better!
 - Add your name and your favorite dessert below the title: e.g. `-  Julien: crepes`
 - Add a descriptive message
 
@@ -144,9 +219,44 @@ knitr::include_graphics("img/github-commit-button.png")
 
 Download this [csv file](https://aurora.nceas.ucsb.edu/~brun/favorite_desserts.csv) about your favorite desserts to your computer
 
-- Just drag and dropit on the Github webapge of your repository to upload it
+- Just drag and drop it on the Github web page of your repository to upload it
 - Add a short message about the file e.g. `Adding dessert csv`
 - Click on the filename to see it!
 
 Bonus Person 2:
 Try to edit the csv file directly on GitHub!
+
+
+## Further reading
+
+Collaborative coding:
+
+- A new grad's guide to coding as a team - Atlassian:
+https://www.atlassian.com/blog/wp-content/uploads/HelloWorldEbook.pdf 
+- 10 tips for efficient programming: 
+https://www.devx.com/enterprise/top-10-tips-for-efficient-team-coding.html 
+- Agile Manifesto: https://moodle2019-20.ua.es/moodle/pluginfile.php/2213/mod_resource/content/2/agile-manifesto.pdf
+
+
+Git using RStudio:
+
+- Happy Git and GitHub for the useR: http://happygitwithr.com/
+- R packages - Git and GitHub: http://r-pkgs.had.co.nz/git.html#git-init
+ 
+Git mainly from the command line:
+
+- Interactive git 101: [https://try.github.io/](https://try.github.io/)
+- Very good tutorial about git: [https://www.atlassian.com/git/tutorials/what-is-version-control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- Git tutorial geared towards scientists: [http://nyuccl.org/pages/gittutorial/](http://nyuccl.org/pages/gittutorial/)
+- Short intro to git basics: [https://github.com/mbjones/gitbasics](https://github.com/mbjones/gitbasics)
+- Git documentation about the basics: [http://gitref.org/basic/](http://gitref.org/basic/)
+- Git documentation - the basics: [https://git-scm.com/book/en/v2/Getting-Started-Git-Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
+- Git terminology: [https://www.atlassian.com/git/glossary/terminology](https://www.atlassian.com/git/glossary/terminology)
+- In trouble, guide to know what to do: [http://justinhileman.info/article/git-pretty/git-pretty.png](http://justinhileman.info/article/git-pretty/git-pretty.png)
+- Want to undo something? <https://github.com/blog/2019-how-to-undo-almost-anything-with-git> 
+- Git terminology: <https://www.atlassian.com/git/glossary/terminology>
+- 8 tips to work better with git: <https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/>
+- GitPro book (2nd edition): <https://git-scm.com/book/en/v2>
+
+
+

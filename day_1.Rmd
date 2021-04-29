@@ -8,9 +8,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Why
 
-This section is an overview of skills and tools that will enable you to collaborate in a reproducible manner. There are many reasons why it is essential to make your science reproducible and how the necessity of openness is a cornerstone of the integrity and efficacy of the scientific research process. Here we will be focusing on why making your work reproducible will empower you to iterate quickly, integrate new information more easily, scale your analysis to larger data sets, and better collaborate by receiving feedback and contributions from others, as well as enable your "future self" to reuse and build from your own work.
+There are many reasons why it is essential to make your science reproducible and how the necessity of openness is a cornerstone of the integrity and efficacy of the scientific research process. Here we will also be focusing on why making your work reproducible will empower **you** to iterate quickly, integrate new information more easily to iterate quickly, scale your analysis to larger data sets, and better collaborate by receiving feedback and contributions from others, as well as enable your "future self" to reuse and build from your own work.
 
-To make your data-riven research reproducible, it is important to develop scientific workflows that will be relying on programming to accomplish the necessary tasks to go from the raw data to the results (figures, new data, publications, ...) of your analysis. Scripting languages, even better open ones such as `R` and `python`, are well-suited for scientists to develop reproducible scientific workflows. Those scripting languages provide a large ecosystem of libraries (also referred to as packages or modules) that are ready to be leveraged to conduct analysis and modeling. The [Reproducible Research Techniques][Reproducible Research Techniques - Data Training] chapter of this onboarding document will introduce how to use `R` to develop such workflows.
+To make your data-riven research reproducible, it is important to develop scientific workflows that will be relying on **programming** to accomplish the necessary tasks to go from the raw data to the results (figures, new data, publications, ...) of your analysis. Scripting languages, even better open ones, such as `R` and `python`, are well-suited for scientists to develop reproducible scientific workflows. Those scripting languages provide a large ecosystem of libraries (also referred to as packages or modules) that are ready to be leveraged to conduct analysis and modeling. In this course we will introduce how to use `R`, `git` and `GitHub` to develop such workflows as a team.
 
 
 ```{r tidy-workflow, out.width='80%', fig.align="center", fig.cap="Workflow example using the `tidyverse`. Note the program box around the workflow and the iterative nature of the analytical process described. _Source: R for Data Science <https://r4ds.had.co.nz/>_",echo=FALSE}
@@ -57,3 +57,35 @@ From the top to the bottom of your script:
 
 We hope this overview section about scientific programming has raised your interest in learning more about best practices and tools for developing reproducible workflows using scripting languages.
 
+
+## Further reading
+
+Here are a few selected publications to help you to learn more about these topics.
+
+*   Data and scientific workflow management:
+    *   Some Simple Guidelines for Effective Data Management: \
+    [https://doi.org/10.1890/0012-9623-90.2.205](https://doi.org/10.1890/0012-9623-90.2.205) 
+    *   Basic concepts of data management: \
+    [https://www.dataone.org/education-modules](https://www.dataone.org/education-modules)
+    *   Good enough practices in Scientific Computing: \
+    [https://doi.org/10.1371/journal.pcbi.1005510](https://doi.org/10.1371/journal.pcbi.1005510) 
+    *   Script your analysis:   \
+    [https://doi.org/10.1038/nj7638-563a](https://doi.org/10.1038/nj7638-563a) 
+    *   Principles for data analysis workflows:   \
+    <https://doi.org/10.1371/journal.pcbi.1008770>
+
+
+*   Open Science:
+    *   The Tao of open science for ecology:  \
+[https://doi.org/10.1890/ES14-00402.1](https://doi.org/10.1890/ES14-00402.1) 
+    *   Challenges and Opportunities of Open Data in Ecology:  \
+[https://doi.org/10.1126/science.1197962](https://doi.org/10.1126/science.1197962)  
+    *   Scientific computing: Code alert \
+[https://doi.org/10.1038/nj7638-563a](https://doi.org/10.1038/nj7638-563a) 
+    *   Our path to better science in less time using open data science tools \
+[https://doi.org/10.1038%2Fs41559-017-0160](https://doi.org/10.1038%2Fs41559-017-0160)
+    *   FAIR data guiding principles \
+[https://doi.org/10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18) 
+    *   Skills and Knowledge for Data-Intensive Environmental Research [https://doi.org/10.1093/biosci/bix025](https://doi.org/10.1093/biosci/bix025)  
+    *   Let go your data \
+[https://doi.org/10.1038/s41563-019-0539-5](https://doi.org/10.1038/s41563-019-0539-5) 

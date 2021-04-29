@@ -11,9 +11,9 @@ navbar:
       menu:
         - text: "Day 1: Reproducible Workflows"
           href: day_1.html
-        - text: "Day 2: Version Control & Code Repository"
+        - text: "Day 2: Scientific Coding as a Team"
           href: day_2.html
-        - text: "Day 3: Code Feedback"
+        - text: "Day 3: Collaborative coding"
           href: day_3.html
         - text: "Day 4: Pair Programming"
           href: day_4.html

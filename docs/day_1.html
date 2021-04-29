@@ -2479,8 +2479,8 @@ Topics
 </button>
 <div class="nav-dropdown-content">
 <a href="day_1.html">Day 1: Reproducible Workflows</a>
-<a href="day_2.html">Day 2: Version Control &amp; Code Repository</a>
-<a href="day_3.html">Day 3: Code Feedback</a>
+<a href="day_2.html">Day 2: Scientific Coding as a Team</a>
+<a href="day_3.html">Day 3: Collaborative coding</a>
 <a href="day_4.html">Day 4: Pair Programming</a>
 <a href="day_5.html">Day 5: Documenting things</a>
 </div>
@@ -2515,13 +2515,14 @@ Topics
 <ul>
 <li><a href="#how">How</a></li>
 <li><a href="#scripting-languages">Scripting languages</a></li>
+<li><a href="#further-reading">Further reading</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
 <h1 id="why">Why</h1>
-<p>This section is an overview of skills and tools that will enable you to collaborate in a reproducible manner. There are many reasons why it is essential to make your science reproducible and how the necessity of openness is a cornerstone of the integrity and efficacy of the scientific research process. Here we will be focusing on why making your work reproducible will empower you to iterate quickly, integrate new information more easily, scale your analysis to larger data sets, and better collaborate by receiving feedback and contributions from others, as well as enable your “future self” to reuse and build from your own work.</p>
-<p>To make your data-riven research reproducible, it is important to develop scientific workflows that will be relying on programming to accomplish the necessary tasks to go from the raw data to the results (figures, new data, publications, …) of your analysis. Scripting languages, even better open ones such as <code>R</code> and <code>python</code>, are well-suited for scientists to develop reproducible scientific workflows. Those scripting languages provide a large ecosystem of libraries (also referred to as packages or modules) that are ready to be leveraged to conduct analysis and modeling. The [Reproducible Research Techniques][Reproducible Research Techniques - Data Training] chapter of this onboarding document will introduce how to use <code>R</code> to develop such workflows.</p>
+<p>There are many reasons why it is essential to make your science reproducible and how the necessity of openness is a cornerstone of the integrity and efficacy of the scientific research process. Here we will also be focusing on why making your work reproducible will empower <strong>you</strong> to iterate quickly, integrate new information more easily to iterate quickly, scale your analysis to larger data sets, and better collaborate by receiving feedback and contributions from others, as well as enable your “future self” to reuse and build from your own work.</p>
+<p>To make your data-riven research reproducible, it is important to develop scientific workflows that will be relying on <strong>programming</strong> to accomplish the necessary tasks to go from the raw data to the results (figures, new data, publications, …) of your analysis. Scripting languages, even better open ones, such as <code>R</code> and <code>python</code>, are well-suited for scientists to develop reproducible scientific workflows. Those scripting languages provide a large ecosystem of libraries (also referred to as packages or modules) that are ready to be leveraged to conduct analysis and modeling. In this course we will introduce how to use <code>R</code>, <code>git</code> and <code>GitHub</code> to develop such workflows as a team.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:tidy-workflow"></span>
 <img src="img/tidy-workflow.png" alt="Workflow example using the `tidyverse`. Note the program box around the workflow and the iterative nature of the analytical process described. _Source: R for Data Science &lt;https://r4ds.had.co.nz/&gt;_" width="80%" />
@@ -2560,7 +2561,42 @@ Figure 1: Workflow example using the <code>tidyverse</code>. Note the program bo
 <li><em>Iterate with small steps</em>, implement few changes at a time to your code. Test, fix, and move forward!</li>
 </ul>
 <p>We hope this overview section about scientific programming has raised your interest in learning more about best practices and tools for developing reproducible workflows using scripting languages.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h2 id="further-reading">Further reading</h2>
+<p>Here are a few selected publications to help you to learn more about these topics.</p>
+<ul>
+<li>Data and scientific workflow management:
+<ul>
+<li>Some Simple Guidelines for Effective Data Management:<br />
+<a href="https://doi.org/10.1890/0012-9623-90.2.205">https://doi.org/10.1890/0012-9623-90.2.205</a></li>
+<li>Basic concepts of data management:<br />
+<a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></li>
+<li>Good enough practices in Scientific Computing:<br />
+<a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a></li>
+<li>Script your analysis:<br />
+<a href="https://doi.org/10.1038/nj7638-563a">https://doi.org/10.1038/nj7638-563a</a></li>
+<li>Principles for data analysis workflows:<br />
+<a href="https://doi.org/10.1371/journal.pcbi.1008770" class="uri">https://doi.org/10.1371/journal.pcbi.1008770</a></li>
+</ul></li>
+<li>Open Science:
+<ul>
+<li>The Tao of open science for ecology:<br />
+<a href="https://doi.org/10.1890/ES14-00402.1">https://doi.org/10.1890/ES14-00402.1</a></li>
+<li>Challenges and Opportunities of Open Data in Ecology:<br />
+<a href="https://doi.org/10.1126/science.1197962">https://doi.org/10.1126/science.1197962</a><br />
+</li>
+<li>Scientific computing: Code alert<br />
+<a href="https://doi.org/10.1038/nj7638-563a">https://doi.org/10.1038/nj7638-563a</a></li>
+<li>Our path to better science in less time using open data science tools<br />
+<a href="https://doi.org/10.1038%2Fs41559-017-0160">https://doi.org/10.1038%2Fs41559-017-0160</a></li>
+<li>FAIR data guiding principles<br />
+<a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a></li>
+<li>Skills and Knowledge for Data-Intensive Environmental Research <a href="https://doi.org/10.1093/biosci/bix025">https://doi.org/10.1093/biosci/bix025</a><br />
+</li>
+<li>Let go your data<br />
+<a href="https://doi.org/10.1038/s41563-019-0539-5">https://doi.org/10.1038/s41563-019-0539-5</a></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div></li>
+</ul>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
