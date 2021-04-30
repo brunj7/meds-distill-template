@@ -84,7 +84,7 @@ The good news is there are several tools out there that have been designed to ma
 
 # Version Control with `git` and `GitHub`
 
-**Aka  --  goodbye `script_JB_03v5b.R` !!**
+Aka  --  **Say goodbye to  `script_JB_03v5b.R` !!**
 
 ## Learning Objectives
 
@@ -93,8 +93,8 @@ In this part of the lesson, you will learn:
 - Why __git__ is useful for reproducible analysis
 - How to use __git__ to track changes to your work over time
 - How to use __GitHub__ to collaborate with others
-- How to structure your commits so your changes are clear to others
 - How to write effective commit messages
+- How to structure your commits so your changes are clear to others
 
 ## The problem with `save_as`
 
@@ -213,14 +213,14 @@ As a Team of two:
 ![](img/github-readme-edit.png)
 
 
-- Replace the title (first line) with something better! Maybe `Favorite Desserts`
+- Replace the title (first line starting with `#`) with something better! Maybe `Favorite Desserts`
 - Add your name and your favorite dessert below the title: e.g.  ` - Julien: crepes`
 - Add a descriptive message
 
 ![](img/github-commit.png)
 - Commit your changes
 
-```{r commit-button, out.width= "50%", echo=FALSE}
+```{r commit-button, out.width="20%", echo=FALSE}
 knitr::include_graphics("img/github-commit-button.png")
 ```
 
@@ -238,6 +238,7 @@ You should have something similar to this repo: https://github.com/brunj7/favori
 #### Bonus Person 2:
 
 Try to edit the csv file directly on GitHub! 
+
 
 **No need to be a programmer to contribute to analytical workflows with GitHub!!**
 

@@ -2530,10 +2530,10 @@ Topics
 </div>
 <h1 id="collaborative-workflows-with-github">Collaborative Workflows with <code>GitHub</code></h1>
 <h2 id="collaborating-through-forking-aka-the-github-workflow">Collaborating through Forking, aka the GitHub workflow</h2>
-<p>A <strong>fork</strong> is a <strong>copy of a repository</strong> that will be stored under your user account. Forking a repository allows you to freely experiment with changes without affecting the original project. We can create a fork on Github by clicking the “fork” button in the top right corner of our repository web page. <img src="images/github-fork.png" /></p>
+<p>A <strong>fork</strong> is a <strong>copy of a repository</strong> that will be stored under your user account. Forking a repository allows you to freely experiment with changes without affecting the original project. We can create a fork on Github by clicking the “fork” button in the top right corner of our repository web page. <img src="img/github-fork.png" /></p>
 <p>Most commonly, forks are used to either propose changes to someone else’s project or to use someone else’s project as a starting point for your own idea.</p>
-<p>When you are satisfied with your work, you can initiate a <strong><em>Pull Request</em></strong> to initiate discussion about your modifications and requesting to integrate your changes to the main repository. Your commit history allows the original repository administrators to see exactly what changes would be merged if they accept your request. Do this by going to the original repository and clicking the “New pull request” button<img src="images/github-pull-request.png" /></p>
-<p>Next, click “compare across forks”, and use the dropdown menus to select your fork as the “head fork” and the original repository as the “base fork”.<img src="images/github-compare-forks.png" /></p>
+<p>When you are satisfied with your work, you can initiate a <strong><em>Pull Request</em></strong> to initiate discussion about your modifications and requesting to integrate your changes to the main repository. Your commit history allows the original repository administrators to see exactly what changes would be merged if they accept your request. Do this by going to the original repository and clicking the “New pull request” button<img src="img/github-pull-request.png" /></p>
+<p>Next, click “compare across forks”, and use the dropdown menus to select your fork as the “head fork” and the original repository as the “base fork”.<img src="img/github-compare-forks.png" /></p>
 <p>Then type a title and description for the changes you would like to make. By using GitHub’s <code>@mention</code> syntax in your Pull Request message, you can ask for feedback from specific people or teams.</p>
 <p>This workflow is recommended when you do not have push/write access to a repository, such as contributing to a open source software or R package, or if you are heavily changing a project.</p>
 <h2 id="collaborating-through-write-push-access">Collaborating through write / push access</h2>
@@ -2541,13 +2541,13 @@ Topics
 <h4 id="adding-collaborators-to-a-repository">Adding collaborators to a repository</h4>
 <ul>
 <li>Click on the repository</li>
-<li>On the right panel, click <img src="images/github-repo-settings.png" /></li>
-<li>On the left pane, click <code>Collaborators</code> and enter the usernames you want to add<img src="images/github-collaborators.png" alt="collaborators" /></li>
+<li>On the right panel, click <img src="img/github-repo-settings.png" /></li>
+<li>On the left pane, click <code>Collaborators</code> and enter the usernames you want to add<img src="img/github-collaborators.png" alt="collaborators" /></li>
 </ul>
 <p>Under this collaborative workflow, we recommend to use git <code>branches</code> combined with pull requests to avoid conflicts and to track and discuss collaborators contributions.</p>
 <h1 id="branches">Branches</h1>
 <figure>
-<img src="images/atlassian_branches_sketch.png" alt="adapted from https://www.atlassian.com/git/tutorials/git-merge" /><figcaption aria-hidden="true">adapted from <a href="https://www.atlassian.com/git/tutorials/git-merge" class="uri">https://www.atlassian.com/git/tutorials/git-merge</a></figcaption>
+<img src="img/atlassian_branches_sketch.png" alt="adapted from https://www.atlassian.com/git/tutorials/git-merge" /><figcaption aria-hidden="true">adapted from <a href="https://www.atlassian.com/git/tutorials/git-merge" class="uri">https://www.atlassian.com/git/tutorials/git-merge</a></figcaption>
 </figure>
 <p>What are branches? Well in fact nothing new, as the <code>master</code> is a branch. A branch represents an independent line of development, parallel to the master (branch).</p>
 <p>Why should you use branches? For 2 main reasons:</p>
@@ -2559,22 +2559,22 @@ Topics
 <h3 id="creating-a-new-branch">Creating a new branch</h3>
 <p>In RStudio, you can create a branch using the git tab.</p>
 <ol type="1">
-<li>Click on the branch button
-<div class="layout-chunk" data-layout="l-body">
-<img src="img/rstudio-git-branch-create.png" width="60%" style="display: block; margin: auto;" /></li>
+<li>Click on the branch button</li>
 </ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/rstudio-git-branch-create.png" width="60%" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="2" type="1">
-<li>Fill the branch name in the new branch window; in this example, we are going to use <code>test</code> for the name; leave the other options as default and click create
-<div class="layout-chunk" data-layout="l-body">
-<img src="img/rstudio-git-branch-test.png" width="40%" style="display: block; margin: auto;" /></li>
+<li>Fill the branch name in the new branch window; in this example, we are going to use <code>test</code> for the name; leave the other options as default and click create</li>
 </ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/rstudio-git-branch-test.png" width="40%" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="3" type="1">
-<li>you will be directly creating a local and remote branch and switch to it
-<div class="layout-chunk" data-layout="l-body">
-<img src="img/rstudio-git-branch-new.png" width="62%" style="display: block; margin: auto;" /></li>
+<li>you will be directly creating a local and remote branch and switch to it</li>
 </ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/rstudio-git-branch-new.png" width="62%" style="display: block; margin: auto;" /></p>
 </div>
 <p>Congratulations you just created your first branch!</p>
 <p>Let us check on Github:</p>
