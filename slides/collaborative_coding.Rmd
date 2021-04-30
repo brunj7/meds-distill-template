@@ -104,6 +104,6 @@ In this course, we will focus on:
 
 class: center, middle
 
-## Back to main doc
+## Back to main doc [here](https://brunj7.github.io/meds-distill-template/day_2.html#learning-objectives)
 
 
