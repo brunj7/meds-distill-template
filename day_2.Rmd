@@ -22,7 +22,7 @@ Environmental Data Science (EDS), as many other data-driven research fields, req
 
 *   Motivating you to document well your work
 *   Helping you to think how to make your work reusable (by you, your future you and others)
-*   Learning to read others' code to build on others' work
+*   Learning to read code from collaborators to build upon each other's work
 *   Gain further knowledge in software development tools, such as version control
 
 **Developing those skills will accelerate your research and open the door for you to contribute to open source projects.**
