@@ -40,7 +40,7 @@ Code review is an *asynchronous* team activity. Despite its impressive name, cod
 
 ### Pair programming
 
-Code review is an *synchronous* team activity, where several programmers get to work together on the same piece of code. This is a great way to gain a better sense of what coding style people are using and better understand their way of solving challenges. It is also a great way to learn from each other. Generally, there is one Driver who is the person typing at the computer. The other role is called Navigator(s). The Navigator does not write code and focuses on finding solutions to the problem. Their use of computer should be limited to searching online for solutions.
+Pair programming is an *synchronous* team activity, where several programmers get to work together on the same piece of code. This is a great way to gain a better sense of what coding style people are using and better understand their way of solving challenges. It is also a great way to learn from each other. Generally, there is one Driver who is the person typing at the computer. The other role is called Navigator(s). The Navigator does not write code and focuses on finding solutions to the problem. Their use of computer should be limited to searching online for solutions.
 
 
 #### Basic principles & practices 
@@ -71,7 +71,7 @@ Adapted from Corey Johannsen: https://blog.newrelic.com/2017/10/31/mob-programmi
 
 ### Project management
 
-This is a big topic and will be highly influeced by the team you are working with both in terms of practices and tools used to manage the project. On the coding side, there is a lot to borrow from Agile development approach for scientist. In a nutshell: "put it out there fast and iterate". In other words to wait to try to have the percfect code or analaysis before sharing it with your collaborators. It is more efficenet to share and discuss an early / draft version, gather feedback and iterate.
+This is a big topic and will be highly influenced by the team you are working with both in terms of practices and tools used to manage the project. On the coding side, there is a lot to borrow from Agile development approach for scientist. In a nutshell: "put it out there fast and iterate". In other words to wait to try to have the percfect code or analaysis before sharing it with your collaborators. It is more efficenet to share and discuss an early / draft version, gather feedback and iterate.
 
 ## Tools
 
@@ -84,7 +84,7 @@ The good news is there are several tools out there that have been designed to ma
 
 # Version Control with `git` and `GitHub`
 
-**Aka -- goodbye `script_JB_03v5b.R` !!**
+**Aka  --  goodbye `script_JB_03v5b.R` !!**
 
 ## Learning Objectives
 
@@ -198,19 +198,22 @@ As a Team of two:
 
 #### Person 1 (owner):
 
-- Create a (first) repository following [these instructions](https://docs.github.com/en/github/getting-started-with-github/create-a-repo) steps 1-6
+- Create a (first) repository following these [instructions](https://docs.github.com/en/github/getting-started-with-github/create-a-repo) steps 1-6
 
 ![](img/github-dessert-repo.png)
 
+- Add Person 2 as collaborator following these [instructions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
+
 #### Person 2: Modify a file
 
-- Refresh the web page
-- Click on pen at the top of the README.md file
+- Check your email to accept the invitation
+- Go to the repository website (link is provided in the invitation)
+- Click on pen at the top of the README.md file to edit it
 
 ![](img/github-readme-edit.png)
 
 
-- Replace the title (first line) with something better!
+- Replace the title (first line) with something better! Maybe `Favorite Desserts`
 - Add your name and your favorite dessert below the title: e.g.  ` - Julien: crepes`
 - Add a descriptive message
 
@@ -236,7 +239,7 @@ You should have something similar to this repo: https://github.com/brunj7/favori
 
 Try to edit the csv file directly on GitHub! 
 
-**No need to be a programmer to contribute to analytical workflows**
+**No need to be a programmer to contribute to analytical workflows with GitHub!!**
 
 
 
