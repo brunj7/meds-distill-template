@@ -6,6 +6,7 @@ title: "Scientific Coding as a Team"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+_Slides_: https://brunj7.github.io/meds-distill-template/slides/collaborative_coding.html
 
 ## Why
 
