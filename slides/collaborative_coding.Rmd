@@ -101,3 +101,9 @@ In this course, we will focus on:
 - **Code repository** (e.g. GitHub): to share code and communicate ideas and feedback
 
 ---
+
+class: center, middle
+
+## Back to main doc
+
+
